@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melania Trump - Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Melania Trump</div>
+    <nav aria-label="Main" class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle" aria-label="Toggle theme">🌗</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <h1 id="title">Melania Trump</h1>
+      <p class="subtitle">Public profile and professional summary in a minimal, accessible page.</p>
+      <button data-target="#about" class="cta">Learn more</button>
+    </section>
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Concise overview with emphasis on clarity, neutrality, and responsive design.</p>
+    </section>
+    <section id="work" class="card" aria-labelledby="work-title">
+      <h2 id="work-title">Selected Work</h2>
+      <ul>
+        <li>Public appearances and messaging strategy</li>
+        <li>Branding and media outreach</li>
+        <li>Advocacy and charitable partnerships</li>
+      </ul>
+      <button class="more" onclick="alert('Field notes kept private.')">Notes</button>
+    </section>
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form onsubmit="return false;" aria-label="Contact form">
+        <input placeholder="Your name" required />
+        <input placeholder="Email" type="email" required />
+        <textarea placeholder="Message" rows="4"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">© 2024 Melania Trump</footer>
+  <script src="script.js"></script>
+</body>
+</html>
